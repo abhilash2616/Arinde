@@ -32,10 +32,6 @@ arinde/
 ├── vite.config.js
 └── README.md
 
-yaml
-Copy
-Edit
-
 ---
 
 ## 🌐 Live Pages
