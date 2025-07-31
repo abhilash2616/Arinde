@@ -50,8 +50,7 @@ Edit
 
 ## 🔗 Live Preview
 
-[Click here to view the live site](https://your-deployment-url.com)  
-_(Replace with your actual deployed link)_
+[Click here to view the live site](https://your-deployment-url.com)
 
 ---
 
@@ -60,13 +59,17 @@ _(Replace with your actual deployed link)_
 ### 1. Clone This Repository
 
 ```bash
-git clone https://github.com/your-username/arinde.git
+git clone https://github.com/abhilash2616/Arinde.git
 cd arinde
 ```
 ## 2. Install Dependencies
--- npm install
+```bash
+npm install
+```
 ## 3. Run Development Server
+```bash
 -- npm run dev
+```
 Open your browser and visit: http://localhost:5173
 
 ## ✨ Features
@@ -79,9 +82,13 @@ Open your browser and visit: http://localhost:5173
 🖼️ Static asset management
 
 ## 📦 Production Build
--- npm run build
+```bash
+npm run build
+```
 ## ✅ Linting & Code Quality
--- npm run lint
+```bash
+npm run lint
+```
 ## 👨‍💻 Author
 -- Abhilash Bera
 🔗 GitHub • 📧 abhilash@example.com
