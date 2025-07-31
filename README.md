@@ -1,12 +1,87 @@
-# React + Vite
+# Arinde – React + Vite Web Application 🌐⚡
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Arinde** is a modern, responsive and modular website built using **React** and **Vite**. It features a scalable folder structure, reusable UI components, and multiple pages — ideal for portfolios, startups, or business websites.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend Framework**: [React](https://reactjs.org/)
+- **Bundler**: [Vite](https://vitejs.dev/)
+- **Styling**: CSS Modules / Tailwind CSS (customizable)
+- **Linting**: [ESLint](https://eslint.org/)
+- **Assets**: Managed in `public/assets`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Project Structure
+
+arinde/
+├── public/
+│ └── assets/ # Images, logos, icons
+├── src/
+│ ├── components/
+│ │ └── ui/ # Reusable UI (Header, Footer, Button)
+│ ├── pages/ # Pages (Home, About, Projects, Contact, 404)
+│ ├── App.jsx # Root App component
+│ ├── main.jsx # Vite entry file
+│ └── index.css # Global stylesheet
+├── .gitignore
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+
+yaml
+Copy
+Edit
+
+---
+
+## 🌐 Live Pages
+
+- `/` → Home  
+- `/about` → About Us  
+- `/projects` → Our Work  
+- `/contact` → Get in Touch  
+- `/404` → Custom Not Found Page
+
+---
+
+## 🔗 Live Preview
+
+[Click here to view the live site](https://your-deployment-url.com)  
+_(Replace with your actual deployed link)_
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone This Repository
+
+```bash
+git clone https://github.com/your-username/arinde.git
+cd arinde
+```
+## 2. Install Dependencies
+-- npm install
+## 3. Run Development Server
+-- npm run dev
+Open your browser and visit: http://localhost:5173
+
+## ✨ Features
+⚡ Blazing fast development with Vite
+⚛️ React component-based architecture
+🧩 Reusable UI components
+📁 Scalable folder structure
+🌐 SEO-ready routes
+✅ ESLint integration for clean code
+🖼️ Static asset management
+
+## 📦 Production Build
+-- npm run build
+## ✅ Linting & Code Quality
+-- npm run lint
+## 👨‍💻 Author
+-- Abhilash Bera
+🔗 GitHub • 📧 abhilash@example.com
