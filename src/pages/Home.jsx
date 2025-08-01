@@ -1,12 +1,22 @@
-import React from 'react'
-import Layout from '../components/Layout'
+import React, { useState } from 'react';
+import Loader from '../components/Loader';
 
 const Home = () => {
-  return (
-    <Layout>
-      home page
-    </Layout>
-  )
-}
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-export default Home
+  setTimeout(() => {
+    setData({ message: "Hello from API!" });
+    setLoading(false);
+  }, 2000);
+
+  if (loading) return <Loader />;
+
+  return (
+    <div className="p-8">
+      <h1 className="text-2xl font-bold">{data.message}</h1>
+    </div>
+  );
+};
+
+export default Home;
