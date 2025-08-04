@@ -1,60 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 body {
-    background-color: #131412;
-    font-family: 'Montserrat', sans-serif;
+  background-color: #131412;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Container for arrows */
 .splide__arrows.splide__arrows--ltr {
-    position: absolute;
-    top: 70%;
-    left: 2%;
-    width: 8% ;
-    display: flex;
-    justify-content: center;
-    transform: translateY(-50%);
-    pointer-events: none;
-    z-index: 10;
+  position: absolute;
+  top: 70%;
+  left: 2%;
+  width: 8%;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 10;
 }
 
 .splide__arrow {
-    background-color: rgba(255, 0, 0, 0.5);
-    color: white;
-    border: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 5px !important;
-    pointer-events: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: rgba(255, 0, 0, 0.5);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px !important;
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .splide__arrow:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .splide__arrow--prev {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .splide__arrow--next {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 @keyframes slideDown {
-    from {
-      transform: translateY(-100%);
-    }
-    to {
-      transform: translateY(0);
-    }
+  from {
+    transform: translateY(-100%);
   }
-  
-  .animate-slideDown {
-    animation: slideDown 0.3s ease forwards;
+  to {
+    transform: translateY(0);
   }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s ease forwards;
+}
+
+.vertical-masked-404 {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  background-image: url("/assets/404/404.png");
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  user-select: none;
+}
