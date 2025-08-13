@@ -6,12 +6,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-/* Container for arrows */
 .splide__arrows.splide__arrows--ltr {
   position: absolute;
   top: 70%;
   left: 2%;
-  width: 8%;
+  width: 7%;
   display: flex;
   justify-content: center;
   transform: translateY(-50%);
@@ -21,7 +20,7 @@ body {
 
 .splide__arrow {
   background-color: rgba(255, 0, 0, 0.5);
-  color: white;
+  color: white !important;
   border: none;
   width: 50px;
   height: 50px;
@@ -35,29 +34,19 @@ body {
 }
 
 .splide__arrow:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.719);
 }
 
 .splide__arrow--prev {
   margin-left: 10px;
+
 }
 
 .splide__arrow--next {
   margin-right: 10px;
 }
 
-@keyframes slideDown {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
 
-.animate-slideDown {
-  animation: slideDown 0.3s ease forwards;
-}
 
 .vertical-masked-404 {
   writing-mode: vertical-lr;

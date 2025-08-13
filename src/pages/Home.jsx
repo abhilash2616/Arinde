@@ -10,13 +10,13 @@ const Home = () => {
   const slides = [
     {
       image: "assets/background/slider-1.webp",
-      text: "Architecture And Interior Design From Arinde",
+      text: ["Architecture And Interior", "Design From Arinde"],
       subText: "Modern Interior Design",
       smallImage: "assets/background/slider-1-sm.webp",
     },
     {
       image: "assets/background/slider-2.webp",
-      text: "Interior And Architecture Design From Arinde",
+      text: ["Interior And Architecture", "Design From Arinde"],
       subText: "Modern Interior Design",
       smallImage: "assets/background/slider-2-sm.webp",
     },
@@ -54,10 +54,8 @@ const Home = () => {
                     </p>
 
                     <h2 className="text-white text-4xl md:text-[80px] text-left font-semibold mb-2 leading-tight">
-                      {slide.text.split("<br />").map((line, i) => (
-                        <span key={i} className="block">
-                          {line}
-                        </span>
+                      {slide.text.map((line, i) => (
+                        <span key={i} className="block">{line}</span>
                       ))}
                     </h2>
                   </motion.div>
