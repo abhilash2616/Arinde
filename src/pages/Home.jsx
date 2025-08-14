@@ -80,6 +80,61 @@ const Home = () => {
           ))}
         </Splide>
       </div>
+
+      <section className="relative py-10">
+      <div className="container mx-auto px-4">
+        <div className="relative flex flex-col md:flex-row items-center">
+          <motion.div
+            className="relative z-20 w-full text-white md:pr-10"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center gap-4">
+              <div className="w-[200px] h-[2px] bg-[#D04713]"></div>
+              <h2 className="uppercase text-[60px] md:text-[120px] font-bold text-transparent stroke-text">
+                About Us
+              </h2>
+            </div>
+
+            <p className="mt-4 text-[50px] font-semibold text-[#B8B9B8] w-[50%] leading-none tracking-normal">
+              We are a passionate team aim to creating best living spaces
+            </p>
+
+            <div className="flex w-[70%] gap-x-6 py-20 items-center">
+              <p className="max-w-[90%]">
+                ARINDE has worked on projects nationwide and worldwide, designs that make magic happen, without the wand. focuses more on structural design, whereas interior design is the practice of creating interior atmosphere. This involves carefully designing lines, colors, plants, lighting, building materials, and space to create an area that feels nurturing to the human body.
+              </p>
+              <motion.img
+                src="assets/about/image-2.webp"
+                alt="about sm"
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+              />
+            </div>
+          </motion.div>
+          <motion.div
+            className="absolute right-0 top-0 w-full md:w-1/2 h-[800px] z-10"
+            initial={{ opacity: 0, scale: 1.1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
+            <img
+              src="assets/about/image-1.webp"
+              alt="about"
+              className="w-full h-full object-contain"
+            />
+          </motion.div>
+        </div>
+      </div>
+    </section>
+
+
+
     </Layout>
   );
 };
