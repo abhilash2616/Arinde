@@ -5,6 +5,8 @@ import "@splidejs/react-splide/css";
 import { Link } from "react-router-dom";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import ServiceCards from "../components/home/ServiceCards";
+import ProjectLayout from "../components/home/ProjectLayout";
 
 const Home = () => {
   const slides = [
@@ -81,7 +83,7 @@ const Home = () => {
         </Splide>
       </div>
 
-      <section className="relative py-10">
+      <section className="relative py-20">
       <div className="container mx-auto px-4">
         <div className="relative flex flex-col md:flex-row items-center">
           <motion.div
@@ -98,7 +100,7 @@ const Home = () => {
               </h2>
             </div>
 
-            <p className="mt-4 text-[50px] font-semibold text-[#B8B9B8] w-[50%] leading-none tracking-normal">
+            <p className="mt-4 text-[50px] font-semibold text-[#B8B9B8] w-[50%] leading-none tracking-tight">
               We are a passionate team aim to creating best living spaces
             </p>
 
@@ -130,6 +132,22 @@ const Home = () => {
             />
           </motion.div>
         </div>
+      </div>
+    </section>
+
+    <section className="py-20 bg-[#0F100E]">
+      <div className="container mx-auto px-4">
+          <h2 className="text-[#B8B9B8] text-[60px] font-bold w-[65%] leading-tight mb-6 tracking-tight">Services Provided In Interior And Architecture Design</h2>
+          <ServiceCards />
+      </div> 
+    </section>
+
+    <section className="py-20">
+      <div className="container mx-auto px-4">
+        <p className="text-center uppercase text-[#D04713] text-[20px]">PROJECTS</p>
+        <h2 className="text-center text-[#B8B9B8] text-[60px] font-bold mb-6 tracking-tight">Latest Works</h2>
+
+        <ProjectLayout />
       </div>
     </section>
 
