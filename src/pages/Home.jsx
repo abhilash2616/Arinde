@@ -85,8 +85,7 @@ const Home = () => {
         </Splide>
       </div>
 
-<<<<<<< HEAD
-      <section className="relative py-10">
+      <section className="relative py-20">
         <div className="container mx-auto px-4">
           <div className="relative flex flex-col md:flex-row items-center">
             <motion.div
@@ -103,34 +102,8 @@ const Home = () => {
                 </h2>
               </div>
 
-              <p className="mt-4 text-[50px] font-semibold text-[#B8B9B8] w-[50%] leading-none tracking-normal">
+              <p className="mt-4 text-[50px] font-semibold text-[#B8B9B8] w-[50%] leading-none tracking-tight">
                 We are a passionate team aim to creating best living spaces
-=======
-      <section className="relative py-20">
-      <div className="container mx-auto px-4">
-        <div className="relative flex flex-col md:flex-row items-center">
-          <motion.div
-            className="relative z-20 w-full text-white md:pr-10"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            <div className="flex items-center gap-4">
-              <div className="w-[200px] h-[2px] bg-[#D04713]"></div>
-              <h2 className="uppercase text-[60px] md:text-[120px] font-bold text-transparent stroke-text">
-                About Us
-              </h2>
-            </div>
-
-            <p className="mt-4 text-[50px] font-semibold text-[#B8B9B8] w-[50%] leading-none tracking-tight">
-              We are a passionate team aim to creating best living spaces
-            </p>
-
-            <div className="flex w-[70%] gap-x-6 py-20 items-center">
-              <p className="max-w-[90%]">
-                ARINDE has worked on projects nationwide and worldwide, designs that make magic happen, without the wand. focuses more on structural design, whereas interior design is the practice of creating interior atmosphere. This involves carefully designing lines, colors, plants, lighting, building materials, and space to create an area that feels nurturing to the human body.
->>>>>>> dc94f8f96ad673eea8e18a47089542582ecd20d7
               </p>
 
               <div className="flex w-[70%] gap-x-6 py-20 items-center">
@@ -168,31 +141,29 @@ const Home = () => {
             </motion.div>
           </div>
         </div>
-<<<<<<< HEAD
       </section>
-=======
-      </div>
-    </section>
 
-    <section className="py-20 bg-[#0F100E]">
-      <div className="container mx-auto px-4">
-          <h2 className="text-[#B8B9B8] text-[60px] font-bold w-[65%] leading-tight mb-6 tracking-tight">Services Provided In Interior And Architecture Design</h2>
+      <section className="py-20 bg-[#0F100E]">
+        <div className="container mx-auto px-4">
+          <h2 className="text-[#B8B9B8] text-[60px] font-bold w-[65%] leading-tight mb-6 tracking-tight">
+            Services Provided In Interior And Architecture Design
+          </h2>
           <ServiceCards />
-      </div> 
-    </section>
+        </div>
+      </section>
 
-    <section className="py-20">
-      <div className="container mx-auto px-4">
-        <p className="text-center uppercase text-[#D04713] text-[20px]">PROJECTS</p>
-        <h2 className="text-center text-[#B8B9B8] text-[60px] font-bold mb-6 tracking-tight">Latest Works</h2>
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <p className="text-center uppercase text-[#D04713] text-[20px]">
+            PROJECTS
+          </p>
+          <h2 className="text-center text-[#B8B9B8] text-[60px] font-bold mb-6 tracking-tight">
+            Latest Works
+          </h2>
 
-        <ProjectLayout />
-      </div>
-    </section>
-
-
-
->>>>>>> dc94f8f96ad673eea8e18a47089542582ecd20d7
+          <ProjectLayout />
+        </div>
+      </section>
     </Layout>
   );
 };
