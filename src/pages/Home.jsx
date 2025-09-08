@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import ServiceCards from "../components/home/ServiceCards";
 import ProjectLayout from "../components/home/ProjectLayout";
+import LatestNew from "../components/home/LatestNew";
 
 const Home = () => {
   const slides = [
@@ -164,6 +165,38 @@ const Home = () => {
           <ProjectLayout />
         </div>
       </section>
+
+
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap justify-between">
+            <div className="w-full md:w-[49%]">
+
+            </div>
+            <div className="w-full md:w-[49%]">
+              <div className="flex flex-wrap justify-center items-center">
+                <img src="assets/cta/cta-1.webp" alt="client" className="w-auto h-auto object-cover" />
+                <img src="assets/cta/cta-2.webp" alt="client" className="w-auto h-auto object-cover" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-between items-center mb-30">
+            <h2 className="text-left capitalize text-[#B8B9B8] text-[60px] font-bold tracking-tight">
+              latest new
+            </h2>
+            <Link to="/projects" className="px-4 py-8 bg-[#D04713]">
+              view more
+            </Link>
+          </div>
+          <LatestNew />
+        </div>
+      </section>
+
     </Layout>
   );
 };
