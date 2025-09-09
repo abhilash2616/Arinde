@@ -47,15 +47,16 @@ const TeamsCard = () => {
                   alt={service.name}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-
-              {/* Overlay */}
-              <div className="absolute w-[80%] bottom-0 left-0 right-0 bg-black/70 px-6 py-4">
-                <h3 className="text-xl font-semibold text-white">
+              <div className="absolute w-[70%] h-28 bottom-0 flex flex-col items-center justify-center gap-y-4 left-0 right-0 mx-auto bg-[#131412] px-6 py-4">
+                <h3 className="text-[25px] tracking-wide font-medium text-[#B8B9B8]">
                   {service.name}
                 </h3>
+                <div className="flex flex-wrap items-center gap-x-4">
                 <p className="text-sm text-orange-500 uppercase tracking-wide">
                   {service.desc}
                 </p>
+                <div className="w-16 h-0.5 bg-orange-500"></div>
+                </div>
               </div>
             </div>
           </SplideSlide>
